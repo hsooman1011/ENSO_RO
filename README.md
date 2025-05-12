@@ -71,6 +71,7 @@ HOW TO RUN
 
 5. Run each simulation script individually:
 
+   ```bash
    python RO_sweep_000.py
    python RO_sweep_001.py
    ...
