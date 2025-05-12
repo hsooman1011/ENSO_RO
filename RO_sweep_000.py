@@ -5,13 +5,7 @@ import sys
 ##################################################################################
 ### 1. RO solver                                                               ###
 ### Please manually uncomment or comment out white noise and red noise options ###
-### inside the module. Default is white noise.                                 ###
-##################################################################################
-
-##################################################################################
-### 1. RO solver                                                               ###
-### Please manually uncomment or comment out white noise and red noise options ###
-### inside the module. Default is white noise.                                 ###
+### inside the module to avoid using if statements. Default is white noise.    ###
 ##################################################################################
 
 def simulate_sde_system(R0, Ra, F1, eps, F2, bT, cT, dT, bh, mT, sigmaT, B, mH, sigmaH, dt, T_total, T_initial, h_initial, xiT_initial, xih_initial, random_num, save_interval):
@@ -212,7 +206,7 @@ for R0 in R0_values:
                                                     simul_num += 1
 
 ##################################################################################
-### 4. End of parameter sweep simulations                                     ### 
+### 4. End of parameter sweep simulations                                      ### 
 ##################################################################################
 
 
