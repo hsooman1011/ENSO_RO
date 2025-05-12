@@ -1,3 +1,5 @@
+README
+-----------
 README: RO Parameter Sweep Simulations (v0.0, May 12, 2025)
 Author: Sooman Han (sooman.han@yale.edu)
 
