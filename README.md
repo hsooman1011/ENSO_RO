@@ -51,7 +51,7 @@ FILES
 HOW TO RUN
 ----------
 
-1. The only required Python dependency is `numpy`.
+1. The only required Python dependencies are `numpy` and `scipy`.
 
 2. Set up your simulation by editing `RO_sweep_000.py`.  
    *Do not change the filename or the line `random_num = 0` inside this file.*
