@@ -22,8 +22,13 @@ Each simulation generates:
 - Metadata including parameters used and summary statistics
 
 **Please cite:**
-Han, S., A. V. Fedorov, and J. Vialard, 2025: *Realistic ENSO Dynamics Requires
+Han, S., A. V. Fedorov and J. Vialard, 2025: *Realistic ENSO Dynamics Requires
 a Damped Nonlinear Recharge Oscillator*. Submitted to *Journal of Climate*.
+
+Fangyu, F. J. Vialard, S. Han, Y. Planton, M. Lengaigne, G. Srinivas, S. Zhao, 
+E. Guilyardi, W. Zhang, C. Ethé, R. Person, A. Voldoire, F.-F. Jin,
+A. V. Fedorov and M. J. McPhaden, 2025: *ENSO cycles mostly after extreme 
+El Niño events*. Submitted to *Nature*.
 
 --------------------------------------------------------------------------------
 FILES
@@ -48,16 +53,23 @@ HOW TO RUN
 
 1. The only required Python dependency is `numpy`.
 
-2. To generate sweep scripts, open `RO_generator.sh` and set:
+2. Set up your simulation by editing `RO_sweep_000.py`.  
+   *Do not change the filename or the line `random_num = 0` inside this file.*
 
+3. To generate multiple sweep scripts, open `RO_generator.sh` and set:
+
+   ```bash
    start=1
-   end=9
+   end=9  # for example
 
-3. Then run the script to generate multiple Python simulation files:
+4. Then run the script to generate multiple Python simulation files:
 
    ./RO_generator.sh
 
-4. Run each simulation script after setting the appropriate simulation parameters inside the file:
+   This will generate RO_sweep_001.py to RO_sweep_009.py,
+   each with random_num = 1 to random_num = 9 internally.
+
+5. Run each simulation script individually:
 
    python RO_sweep_000.py
    python RO_sweep_001.py
