@@ -25,6 +25,8 @@ Each simulation generates:
 Han, S., A. V. Fedorov and J. Vialard, 2025: *Realistic ENSO Dynamics Requires
 a Damped Nonlinear Recharge Oscillator*. Submitted to *Journal of Climate*.
 
+The code is also used in:
+
 Fangyu, F. J. Vialard, S. Han, Y. Planton, M. Lengaigne, G. Srinivas, S. Zhao, 
 E. Guilyardi, W. Zhang, C. Ethé, R. Person, A. Voldoire, F.-F. Jin,
 A. V. Fedorov and M. J. McPhaden, 2025: *ENSO cycles mostly after extreme 
